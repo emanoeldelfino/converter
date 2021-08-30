@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>General Converter</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <form>
       <div>
-        <label for="conversionUnit"> Unit you want to convert </label>
+        <label for="conversionUnit">You want to convert </label>
         <select name="conversionUnit" id="conversionUnit">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+          <option value="time">Time</option>
+          <option value="numeric-bases">Numeric Bases</option>
+          <option value="distance">Distance</option>
+          <option value="temperature">Temperature</option>
         </select>
       </div>
 
@@ -25,7 +26,7 @@
       </div>
 
       <div>
-        <label for=""></label>
+        <label for="to">To</label>
         <input id="to" type="number" />
         <select name="outputUnit" id="outputUnit" class="unit"></select>
       </div>
