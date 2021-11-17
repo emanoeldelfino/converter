@@ -25,10 +25,6 @@ main div {
   margin: 10px;
 }
 
-main>div {
-  display: flex;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -47,12 +43,19 @@ input#submit:hover {
 }
 
 select, input, span#output-num {
-  width: 150px;
-  text-align: center;
+  width: 200px;
   height: 30px;
   border-radius: 10px;
   background-color: #666666;
   color: white;
+}
+
+select {
+  padding: 0 10px;
+}
+
+input, span#output-num {
+  text-align: center;
 }
 
 body, select, input {
@@ -60,15 +63,9 @@ body, select, input {
   border: none;
 }
 
-form div, label {
-  display: flex;
-}
-
 main div span {
-  width: 150px;
   text-align: center;
   border-radius: 20px;
-  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,9 +92,6 @@ input:focus, select:focus {
 @media (max-width: 385px) {
   main {
     width: 90%;
-  }
-  select, input, span#output-num {
-    max-width: 100px;
   }
   main div span {
     width: 120px;
