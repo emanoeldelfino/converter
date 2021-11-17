@@ -15,13 +15,35 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+main {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 25px;
+}
+
 main div {
   margin: 10px;
+}
+
+main>div {
+  display: flex;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+input#submit {
+  margin: 30px 0;
+  background-color: rgb(60, 60, 60);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input#submit:hover {
+  background-color: rgb(45, 45, 45);
 }
 
 select, input, span#output {

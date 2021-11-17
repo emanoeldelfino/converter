@@ -30,15 +30,17 @@
         <div>
           <label for="input-num">
             <span>Input Number</span>
-            <input type="number" name="input-num" id="input-num" />
+            <input type="text" name="input-num" id="input-num" />
           </label>
         </div>
-        <div>
-          <span>Output Number</span>
-          <span id="output"></span>
-        </div>
+        <input id="submit" type="submit" value="Submit" />
       </form>
+      <div>
+        <span>Output Number</span>
+        <span id="output"></span>
+      </div>
     </main>
   </body>
-  <script src="./app.js"></script>
+  <script src="./app.js" type="module"></script>
+  <script src="./baseConverter.js" type="module"></script>
 </html>

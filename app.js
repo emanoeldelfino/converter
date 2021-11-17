@@ -1,3 +1,5 @@
+import { valueToBase } from "./baseConverter.js";
+
 const bases = Array.from({ length: 35 }, (v, k) => k + 2);
 const temps = ["Celsius", "Fahrenheit", "Kelvin"];
 const inputSelect = document.querySelector("#input-unit");
