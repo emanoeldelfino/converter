@@ -18,7 +18,7 @@ body {
 main {
   border: 1px solid black;
   border-radius: 10px;
-  padding: 25px;
+  padding: 10px;
 }
 
 main div {
@@ -90,4 +90,16 @@ input:focus, select:focus {
   outline: none !important;
   border: 1px solid #ff7300;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+@media (max-width: 385px) {
+  main {
+    width: 90%;
+  }
+  select, input, span#output-num {
+    max-width: 100px;
+  }
+  main div span {
+    width: 120px;
+  }
 }
