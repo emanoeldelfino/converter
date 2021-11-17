@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,9 +43,21 @@ input#submit:hover {
   background-color: rgb(45, 45, 45);
 }
 
-select, input, span#output-num {
-  width: 200px;
+textarea#output-num {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  display: block;
+  overflow: auto;
+  padding: 10px 15px;
+  resize: vertical;
+}
+
+select, input {
   height: 30px;
+}
+
+select, input, textarea#output-num {
+  width: 200px;
   border-radius: 10px;
   background-color: #666666;
   color: white;
@@ -89,10 +102,18 @@ input:focus, select:focus {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+@media (min-width: 768px) {
+  span#output-num {
+    height: 60px;
+
+  }
+}
+
 @media (max-width: 385px) {
   main {
     width: 90%;
   }
+
   main div span {
     width: 120px;
   }

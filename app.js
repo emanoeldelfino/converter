@@ -43,7 +43,6 @@ submitBtn.addEventListener("click", (e) => {
   let output = "";
 
   if (conversionUnit.value === "base") {
-    output = valueToBase(input, inputUnit, outputUnit);
     try {
       output = valueToBase(input, inputUnit, outputUnit);
     } catch (err) {
