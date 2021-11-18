@@ -37,18 +37,21 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   let input = inputNum.value;
-  let inputUnit = parseInt(inputSelect.value.split(" ")[0]);
-  let outputUnit = parseInt(outputSelect.value.split(" ")[0]);
 
   let output = "";
 
   if (conversionUnit.value === "base") {
+    let inputUnit = parseInt(inputSelect.value.split(" ")[0]);
+    let outputUnit = parseInt(outputSelect.value.split(" ")[0]);
+
     try {
       output = valueToBase(input, inputUnit, outputUnit);
     } catch (err) {
       alert(err);
     }
   } else if (conversionUnit.value === "temp") {
+    let inputUnit = inputSelect.value[0];
+    let outputUnit = outputSelect.value[0];
     output = convertTemp(input, inputUnit, outputUnit);
   }
   document.querySelector("#output-num").innerText = output;

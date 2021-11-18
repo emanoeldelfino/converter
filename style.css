@@ -50,14 +50,15 @@ textarea#output-num {
   overflow: auto;
   padding: 10px 15px;
   resize: vertical;
+  width: 100%;
 }
 
 select, input {
   height: 30px;
+  width: 200px;
 }
 
 select, input, textarea#output-num {
-  width: 200px;
   border-radius: 10px;
   background-color: #666666;
   color: white;
