@@ -6,8 +6,10 @@ for (let i = 65; i <= 90; i++) {
 export function decToBase(decimal, outputBase) {
   if (isNaN(decimal)) {
     throw new Error("Invalid input. Not a number.");
-  } else if (outputBase < 2 || outputBase > 36) {
-    throw new Error("Invalid base. Less than 2 or greater than 36.");
+  } else if (isNaN(outputBase) || outputBase < 2 || outputBase > 36) {
+    throw new Error(
+      `Invalid base ${outputBase}. It should be a number between 2 and 36.`
+    );
   } else {
     const positive = Math.abs(decimal) === Number(decimal);
     let dividend = positive ? decimal : Math.abs(decimal);
